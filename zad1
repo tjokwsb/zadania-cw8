@@ -1,0 +1,58 @@
+using System;
+
+public enum DniTygodnia
+{
+    Poniedzialek,
+    Wtorek,
+    Sroda,
+    Czwartek,
+    Piatek,
+    Sobota,
+    Niedziela
+}
+
+public enum EtapyPrania
+{
+    WstepnePlukanie,
+    GlownePranie,
+    Plukanie,
+    Odwirowanie,
+    Suszenie
+}
+
+public enum PosilkiDnia
+{
+    Sniadanie,
+    DrugieSniadanie,
+    Obiad,
+    Podwieczorek,
+    Kolacja
+}
+
+public enum BierkiSzachowe
+{
+    Krol,
+    Hetman,
+    Wieza,
+    Goniec,
+    Skoczek,
+    Pion
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        DniTygodnia dzien = DniTygodnia.Wtorek;
+        Console.WriteLine("Dzisiaj jest " + dzien);
+
+        EtapyPrania etap = EtapyPrania.Plukanie;
+        Console.WriteLine("Aktualny etap prania: " + etap);
+
+        PosilkiDnia posilek = PosilkiDnia.Obiad;
+        Console.WriteLine("Najważniejszy posiłek dnia: " + posilek);
+
+        BierkiSzachowe bierka = BierkiSzachowe.Goniec;
+        Console.WriteLine("Aktualna bierka na planszy: " + bierka);
+    }
+}
