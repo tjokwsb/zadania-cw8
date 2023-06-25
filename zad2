@@ -1,0 +1,59 @@
+using System;
+
+public struct Student
+{
+    public string Imie;
+    public string Nazwisko;
+    public int NumerIndeksu;
+    public string Kierunek;
+}
+
+public struct Przedmiot
+{
+    public string Nazwa;
+    public string Kod;
+    public int ECTS;
+}
+
+public struct NauczycielAkademicki
+{
+    public string Imie;
+    public string Nazwisko;
+    public string StopienNaukowy;
+    public string Specjalizacja;
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        Student student = new Student();
+        student.Imie = "Jan";
+        student.Nazwisko = "Kowalski";
+        student.NumerIndeksu = 12345;
+        student.Kierunek = "Informatyka";
+
+        Console.WriteLine("Student: " + student.Imie + " " + student.Nazwisko);
+        Console.WriteLine("Numer indeksu: " + student.NumerIndeksu);
+        Console.WriteLine("Kierunek: " + student.Kierunek);
+
+        Przedmiot przedmiot = new Przedmiot();
+        przedmiot.Nazwa = "Programowanie";
+        przedmiot.Kod = "PROG101";
+        przedmiot.ECTS = 5;
+
+        Console.WriteLine("\nPrzedmiot: " + przedmiot.Nazwa);
+        Console.WriteLine("Kod: " + przedmiot.Kod);
+        Console.WriteLine("ECTS: " + przedmiot.ECTS);
+
+        NauczycielAkademicki nauczyciel = new NauczycielAkademicki();
+        nauczyciel.Imie = "Anna";
+        nauczyciel.Nazwisko = "Nowak";
+        nauczyciel.StopienNaukowy = "dr";
+        nauczyciel.Specjalizacja = "Sztuczna inteligencja";
+
+        Console.WriteLine("\nNauczyciel: " + nauczyciel.Imie + " " + nauczyciel.Nazwisko);
+        Console.WriteLine("Stopień naukowy: " + nauczyciel.StopienNaukowy);
+        Console.WriteLine("Specjalizacja: " + nauczyciel.Specjalizacja);
+    }
+}
