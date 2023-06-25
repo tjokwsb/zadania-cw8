@@ -1,1 +1,1 @@
-# zadania-cw8
+zadania do ćwiczeń nr 8
